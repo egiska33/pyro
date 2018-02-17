@@ -1,0 +1,16 @@
+{{ asset_add("styles.css", "anomaly.field_type.tags::scss/choices.scss") }}
+{{ asset_add("scripts.js", "anomaly.field_type.tags::js/choices.min.js") }}
+{{ asset_add("scripts.js", "anomaly.field_type.tags::js/input.js") }}
+
+<input
+        class="form-control"
+        name="{{ field_type.input_name }}"
+        value="{{ field_type.value|join(',') }}"
+        placeholder="{{ trans(field_type.placeholder) }}"
+        {{ html_attributes(field_type.attributes) }}
+        {{ field_type.disabled ? 'disabled' }}
+        {{ field_type.readonly ? 'readonly' }}>
+
+<small class="text-muted">
+    {{ trans('anomaly.field_type.tags::input.help') }}
+</small>

@@ -1,0 +1,38 @@
+{
+    "name": "anomaly/image-field_type",
+    "type": "streams-addon",
+    "description": "",
+    "keywords": [
+        "streams field type",
+        "image field type",
+        "image"
+    ],
+    "homepage": "http://anomaly.is/",
+    "license": "https://pyrocms.com/pro/license",
+    "authors": [
+        {
+            "name": "PyroCMS, Inc.",
+            "email": "support@pyrocms.com",
+            "homepage": "http://pyrocms.com/",
+            "role": "Owner"
+        },
+        {
+            "name": "Ryan Thompson",
+            "email": "ryan@pyrocms.com",
+            "homepage": "http://ryanthepyro.com/",
+            "role": "Owner"
+        }
+    ],
+    "support": {
+        "email": "support@pyrocms.com"
+    },
+    "require": {
+        "anomaly/files-module": "^2.2",
+        "anomaly/streams-platform": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anomaly\\ImageFieldType\\": "src/"
+        }
+    }
+}
